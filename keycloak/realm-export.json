@@ -1,0 +1,35 @@
+{
+  "realm": "phoenix",
+  "enabled": true,
+  "displayName": "Phoenix Dev",
+  "registrationAllowed": false,
+  "loginWithEmailAllowed": true,
+  "components": {
+    "org.keycloak.storage.UserStorageProvider": [
+      {
+        "name": "openldap",
+        "providerId": "ldap",
+        "providerType": "org.keycloak.storage.UserStorageProvider",
+        "parentId": "phoenix",
+        "config": {
+          "enabled": ["true"],
+          "vendor": ["other"],
+          "connectionUrl": ["ldap://openldap:389"],
+          "usersDn": ["ou=people,dc=phoenix,dc=test"],
+          "bindDn": ["cn=ldap_ro,dc=phoenix,dc=test"],
+          "bindCredential": ["ldap_ro_pw_2025"],
+          "searchScope": ["1"],
+          "useTruststoreSpi": ["ldapsOnly"],
+          "authType": ["simple"],
+          "importEnabled": ["true"],
+          "syncRegistrations": ["false"],
+          "pagination": ["true"],
+          "usernameLDAPAttribute": ["uid"],
+          "rdnLDAPAttribute": ["uid"],
+          "uuidLDAPAttribute": ["entryUUID"],
+          "userObjectClasses": ["inetOrgPerson"]
+        }
+      }
+    ]
+  }
+}
