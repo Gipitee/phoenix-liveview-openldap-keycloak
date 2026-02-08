@@ -1,4 +1,6 @@
-# Phoenix + LiveView + Keycloak + OpenLDAP Template
+# Phoenix + LiveView + OpenLDAP + Keycloak Template
+
+(aka PLOK stack)
 
 This repository is a **template** for a Phoenix + LiveView application that uses:
 
