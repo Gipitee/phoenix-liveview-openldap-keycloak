@@ -1,0 +1,13 @@
+dn: ou=people,dc=phoenix,dc=test
+objectClass: organizationalUnit
+ou: people
+
+
+dn: uid=devuser,ou=people,dc=phoenix,dc=test
+objectClass: inetOrgPerson
+cn: Dev User
+givenName: Dev
+sn: User
+uid: devuser
+mail: devuser@phoenix.test
+userPassword: ldap_user_pw_2025
